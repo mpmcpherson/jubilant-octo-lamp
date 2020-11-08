@@ -4,7 +4,6 @@
 	
 	$log = $log . "\n" . $_SERVER['HTTP_USER_AGENT'];
 
-    echo "<h1> ".$log." </h1>";
 
 	file_put_contents("access".gmdate("Y-m-d H:i:s") . ".txt", $log);
 	

@@ -14,6 +14,7 @@ body
 	-webkit-flex: 1;          /* Chrome */
 	-ms-flex: 1;              /* IE 10 */
 	flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	box-shadow: 10px 5px 5px gray;
 }
 
 .wrapper
@@ -28,9 +29,20 @@ body
 {
 
 }
+.pageHead
+{
+	box-shadow: 10px 5px 5px gray;
+}
 .mainBody
 {
   width: 80%;
+  padding-left: 13px;
 }
-
+.oneTenth { height: 10%; }
+.oneFifth { height: 20%; }
+.oneQuarter { height: 25%; }
+.half { height: 50%; }
+.threeQuarters { height: 75%;}
+.eighty { height: 80%; }
+.ninety { height: 90%; }
 .full { height: 100% }

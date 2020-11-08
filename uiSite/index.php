@@ -11,17 +11,23 @@
 <body>
 	<?php require 'resources/logger.php';?>
 
-	<div class="wrapper full" id="container">
-		<div class="leftBar full" id="leftBar">
+	<div class="oneTenth pageHead">true header</div>
+
+	<div class="wrapper ninety" id="container">
+
+		<div class="leftBar ninety" id="leftBar">
 			left bar
 		</div>
 
-		<div class="mainBody full" id="body">
+		<div class="mainBody ninety" id="body">
 			<div class="header">
 				<h3>Page Title</h3>
-			</div>
-			<button id="btn">Top Button Text</button>
-			<div id="results"></div>
+			</div> 
+			<!--<button id="btn">Top Button Text</button>-->
+			<div id="text">Here's some text, and isn't it interesting?</div>
+			<div id="text">Lorem ipsum dolor sit amet. Dulche et decorum est</div>
+			<div id="text">Here's some text, and isn't it interesting?</div>
+			<div> End Text		</div>	
 		</div>
 
 	</div>
@@ -32,6 +38,11 @@
 <script type="text/javascript">
 	var button = document.getElementById('btn');
 	var resultDiv = document.getElementById('results');
+
+	docReady(function() {
+    	let leftbar = document.getElementById('leftBar');
+    	leftbar.setAttribute("class","leftBar full")
+	});
 
  
 	button.addEventListener('click', function() {
